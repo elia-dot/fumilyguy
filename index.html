@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>familyGuy master</title>
+  </head>
+  <body>
+    <main class="game-container">
+      <section class="game">
+        <nav>
+          <ul class="head-list">
+            <div class="id">
+              <li class="player-avatar"></li>
+              <li class="player-name"></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="easy">
+          <div class="tracker">
+            <h3 id="restart">restart</h3>
+            <ul class="side-list">
+              <li>
+                <p>currect answers:<span id="currect"></span></p>
+              </li>
+              <li>
+                <p>wrong answers:<span id="wrong"></span></p>
+              </li>
+              <li class="desktop">
+                <p>quotes remain:<span id="remain"></span></p>
+              </li>
+            </ul>
+          </div>
+          <div id="endGame" class="end-game">
+            <h1 id="message"></h1>
+            <button class="restartGame">restart</button>
+          </div>
+          <div id="play" class="play">
+            <div class="timer-wraper">
+              <div id="timer"></div>
+            </div>
+
+            <div id="quote-container" class="quote-container"></div>
+            <div id="answers" class="answers">
+              <button id="petter" class="answerBtn">petter</button>
+              <button id="lois" class="answerBtn">lois</button>
+              <button id="chris" class="answerBtn">chris</button>
+              <button id="meg" class="answerBtn">meg</button>
+              <button id="brian" class="answerBtn">brian</button>
+              <button id="stewie" class="answerBtn">stewie</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newGame">
+        <h1>
+          You think you have what it takes <br />
+          to become a FAMILY GUY master? giggity..
+        </h1>
+        <button class="gameBtn" id="gameBtn">start game</button>
+      </section>
+    </main>
+    <div class="setting-bg">
+      <section class="setting">
+        <div class="setname">
+          <img id="closeName" class="close" src="./assets/close (1).png" />
+          <h2>enter your ingame name:</h2>
+          <div class="input-field">
+            <input id="inputName" type="text" required />
+          </div>
+          <button id="submitName" class="submitBtn">submit</button>
+        </div>
+        <div class="setdifficulty">
+          <h2>choose difficulty:</h2>
+          <img
+            id="closeDifficulty"
+            class="close"
+            src="./assets/close (1).png"
+          />
+          <div class="btn-nav">
+            <button id="easyBtn" class="submitBtn">easy</button>
+            <button id="mediumBtn" class="submitBtn">medium</button>
+            <button id="hardBtn" class="submitBtn">hard</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
